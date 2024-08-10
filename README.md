@@ -14,10 +14,14 @@ The following Nmap command was used to perform a detailed scan:
 sudo nmap -n -p- -sV 10.0.2.4 -oN portscan.txt
 
 ## Command Breakdown:
-sudo: Runs the command with superuser privileges.
+sudo: Run the commands with superuser privileges.
 nmap: The network scanning tool.
 -n: Disables DNS resolution to speed up the scan.
 -p-: Scans all 65,535 TCP ports.
 -sV: Detects the version of services running on open ports.
 10.0.2.4: The target IP address of the Metasploitable machine.
 -oN portscan.txt: Saves the output to portscan.txt.
+
+##Files
+
+portscan.txt: Contains the results of the Nmap scan. This file lists all open ports and its services and versions found on the target machine.
